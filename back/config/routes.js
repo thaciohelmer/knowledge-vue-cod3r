@@ -49,5 +49,5 @@ module.exports = app => {
 
   app.route('/stats')
     .all(app.config.passport.authenticate())
-    .get(admin(app.api.stat.get))
+    .get(app.api.stat.get)
 }
